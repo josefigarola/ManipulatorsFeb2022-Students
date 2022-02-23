@@ -1,9 +1,12 @@
 #!/usr/bin/env python
+# Library that contains the basic files for ros to work
 import rospy
-from listener.msg import time_msg
+# Library that contains standard ROS msgs
+from std_msgs.msg import String
+
 
 def callback(data):
-    rospy.loginfo("time %s and date %s", data.hour, data.date)
+    rospy.loginfo(rospy.get_caller_id() + " I heard %s", data.data)
     
 def listener():
 
@@ -12,9 +15,9 @@ def listener():
     # anonymous=True flag means that rospy will choose a unique
     # name for our 'listener' node so that multiple listeners can
     # run simultaneously.
-    rospy.init_node('listener', anonymous=True)
+    rospy.init_node('listener',anonymous=True)
 
-    rospy.Subscriber("chatter", time_msg, callback)
+    rospy.Subscriber("chatter", String, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
