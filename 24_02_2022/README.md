@@ -1,13 +1,19 @@
-# Fe de erratas
+# ERRATUM
 
-Hola, chicos:
+Dear students:
 
-Me he topado con un error en el folder inicial que bajaron. El archivo requerido en la ultima actividad de Gazebo
+It was pointed out to me that the file,  
 
 > spawn_puzzlebot_gazebo.launch
 
-no se encontraba en el path indicado.
+,was a missing.
 
-Ahora la pueden encontrar en el path correcto:
+Now you can find the file required for the final activity in the following path, 
 
 > ManipulatorsFeb2022-Students/24_02_2022/ws/src/puzzlebot_gazebo/launch/spawn_puzzlebot_gazebo.launch
+
+My apologies.
+
+## Instructions
+
+Follow the activity page and use the Cheat sheet as reference. 
