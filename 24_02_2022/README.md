@@ -6,7 +6,7 @@ It was pointed out to me that the file,
 
 > spawn_puzzlebot_gazebo.launch
 
-,was a missing.
+,was missing.
 
 Now you can find the file required for the final activity in the following path, 
 
