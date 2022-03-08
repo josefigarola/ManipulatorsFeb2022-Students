@@ -1,0 +1,2 @@
+puzzlebot_control:puzzlebot_gazebo:puzzlebot_world:solution
+-DCATKIN_DEVEL_PREFIX=/home/marc/git/ManFeb2022_Students/ManipulatorsFeb2022-Students/17_02_2022/catkin_A2_template/devel -DCMAKE_INSTALL_PREFIX=/home/marc/git/ManFeb2022_Students/ManipulatorsFeb2022-Students/17_02_2022/catkin_A2_template/install -G Unix Makefiles

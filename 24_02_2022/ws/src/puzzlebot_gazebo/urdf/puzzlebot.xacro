@@ -6,10 +6,10 @@
 
 <xacro:include filename="$(find puzzlebot_gazebo)/urdf/parameters.xacro" />
 <xacro:include filename="$(find puzzlebot_gazebo)/urdf/macros.xacro" />
-<!--
+
 <xacro:include filename="$(find puzzlebot_gazebo)/urdf/puzzlebot.gazebo" />
 <xacro:include filename="$(find puzzlebot_gazebo)/urdf/materials.xacro" />
---> 
+
 
 <!-- Dummy link needed to load the model properly-->
   <link name="base_link">
