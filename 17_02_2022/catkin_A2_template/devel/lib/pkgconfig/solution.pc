@@ -1,8 +1,0 @@
-prefix=/home/marc/git/ManFeb2022_Students/ManipulatorsFeb2022-Students/17_02_2022/catkin_A2_template/devel
-
-Name: solution
-Description: Description of solution
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
