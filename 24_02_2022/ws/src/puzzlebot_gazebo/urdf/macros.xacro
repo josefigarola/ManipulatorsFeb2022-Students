@@ -2,6 +2,30 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 <!-- note to self: modify this to add wheel as left and right with -->
+    <xacro:macro name="wheel" params="name reflect">
+      <link name="${name}_wheel">
+        <visual>
+          <origin xyz="0 0 0" rpy="${reflect * PI/2} 0 0" />
+          <geometry>
+            <!-- with mesh-->
+            <mesh filename="file://${mesh_wheel}" />
+          </geometry>
+        </visual>
+
+        <collision>
+          <origin xyz="0 0 0 " rpy="${reflect * PI/2} 0 0" />
+          <geometry>
+            <cylinder length="${wheelHeight}" radius="${wheelRadius}" />
+          </geometry>
+        </collision>
+
+        <inertial>
+          <mass value="${wheelMass}" />
+          <origin xyz="0 0 0" rpy="${PI/2} 0 0" />
+          <xacro:wheel_inertia r="${wheelRadius}" l="${wheelHeight}" m="${wheelMass}" />
+        </inertial>
+      </link>
+    </xacro:macro>
     
     <xacro:macro name="box_inertia" params="m x y z">
             <inertia

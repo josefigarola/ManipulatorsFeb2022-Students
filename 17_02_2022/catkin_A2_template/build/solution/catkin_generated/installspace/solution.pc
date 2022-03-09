@@ -1,0 +1,8 @@
+prefix=/home/figarola/Escritorio/MAN_class/ManipulatorsFeb2022-Students/17_02_2022/catkin_A2_template/install
+
+Name: solution
+Description: Description of solution
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

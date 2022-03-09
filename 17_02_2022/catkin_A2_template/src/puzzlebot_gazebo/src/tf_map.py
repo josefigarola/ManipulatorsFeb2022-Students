@@ -20,20 +20,20 @@ class StateGatherer():
 
     def callback(self, data):
 
-	try: 
+		try: 
 
-		aux_idx = data.name.index("puzzlebot")
+			aux_idx = data.name.index("puzzlebot")
 
-		t = TransformStamped()
-		t.header.stamp = rospy.Time.now()
-		t.header.frame_id = "world"
-		t.child_frame_id = "base_link"
-		t.transform.translation = data.pose[aux_idx].position
-		t.transform.rotation = data.pose[aux_idx].orientation
-		self.br.sendTransform(t)
+			t = TransformStamped()
+			t.header.stamp = rospy.Time.now()
+			t.header.frame_id = "world"
+			t.child_frame_id = "base_link"
+			t.transform.translation = data.pose[aux_idx].position
+			t.transform.rotation = data.pose[aux_idx].orientation
+			self.br.sendTransform(t)
 
-	except:
-		pass
+		except:
+			pass
 
 if __name__ == '__main__':
     aux = StateGatherer()
